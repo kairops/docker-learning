@@ -2,11 +2,11 @@
 
 Docker Learning Course
 
-Duration: three weeks, three days per each week, 1 hour per day
-
-Table of Content
+Duration: Two weeks, three days per each week, 1 hour per day
 
 ## Week 1
+
+Learning docker
 
 ### Day 1
 
@@ -55,11 +55,13 @@ Reference repositories:
 
 ## Week 2
 
-### Day 4
+Using docker
+
+### Day 4
 
 Docker compose in real projects
 
-Reference repositories: none
+Reference repositories: none that we can share :)
 
 ### Day 5
 
@@ -78,3 +80,16 @@ Reference repositories:
 - https://github.com/red-panda-ci/jenkins-dind
 - https://github.com/informaticaph/PXGO_00064_2014_PHA
 - https://hub.docker.com/_/docker
+
+### Day 6
+
+BDD with Docker
+
+Use the project [Duing](https://github.com/kairops/docker-ubuntu-xrdp-mate-custom/tree/master/duing) to dessign and execute a BDD test
+
+Demonstrate how we can use Docker to run a complete linux Desktop environment with all the tools needed to materialize complex tasks.
+
+Reference repositories:
+
+- https://github.com/kairops/docker-ubuntu-xrdp-mate-custom
+- https://github.com/sergioortegagomez/docker-ubuntu-cucumber
