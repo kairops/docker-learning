@@ -93,3 +93,7 @@ Reference repositories:
 
 - https://github.com/kairops/docker-ubuntu-xrdp-mate-custom
 - https://github.com/sergioortegagomez/docker-ubuntu-cucumber
+
+## Further reading
+
+- [General Concepts](https://github.com/kairops/general-concepts/blob/master/es/toc.md) about Software Development (Spanish)
