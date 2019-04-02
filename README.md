@@ -39,6 +39,7 @@ Docker Elements
 Refertence repositories:
 
 - https://github.com/red-panda-ci/jenkins-workshop
+- https://github.com/moncho/dry (container management)
 
 ### Day 3
 
@@ -96,4 +97,5 @@ Reference repositories:
 
 ## Further reading
 
-- [General Concepts](https://github.com/kairops/general-concepts/blob/master/es/toc.md) about Software Development (Spanish)
+- [General Concepts](https://github.com/kairops/general-concepts/blob/master/es/toc.md) 
+about Software Development (Spanish)
