@@ -12,7 +12,7 @@ Learning docker
 
 Inception with docker basics
 
-- Containers: execution, deatached execution
+- Container execution and [deatached execution](https://medium.freecodecamp.org/dockers-detached-mode-for-beginners-c53095193ee9)
 - Pets vs Cattle
 - Docker Development Flow
 - Images
@@ -26,6 +26,7 @@ Inception with docker basics
 Reference repositories:
 
 - https://github.com/danielesiddi/docker-course
+- https://medium.freecodecamp.org/dockers-detached-mode-for-beginners-c53095193ee9
 
 ### Day 2
 
