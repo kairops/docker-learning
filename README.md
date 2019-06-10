@@ -12,7 +12,7 @@ Learning docker
 
 Inception with docker basics
 
-- Containers: execution, deatached execution
+- Container execution and [deatached execution](https://medium.freecodecamp.org/dockers-detached-mode-for-beginners-c53095193ee9)
 - Pets vs Cattle
 - Docker Development Flow
 - Images
@@ -25,7 +25,7 @@ Inception with docker basics
 
 Reference repositories:
 
-- https://github.com/danielesiddi/docker-course
+- Daniele Siddi's GitHub - [Curso de introducción a Docker](https://github.com/danielesiddi/docker-course)
 
 ### Day 2
 
@@ -38,7 +38,8 @@ Docker Elements
 
 Refertence repositories:
 
-- https://github.com/red-panda-ci/jenkins-workshop
+- Red Panda CI's GitHub - [Jenkins Workshop](https://github.com/red-panda-ci/jenkins-workshop)
+- Moncho's Github - [DRY](https://github.com/moncho/dry) (container management CLI)
 
 ### Day 3
 
@@ -51,7 +52,7 @@ Docker Compose
 
 Reference repositories:
 
-- https://github.com/sergioortegagomez/red-panda-ci-symfony
+- Sergio Ortega Gome's GitHub - [Symfony 4 App Example](https://github.com/sergioortegagomez/red-panda-ci-symfony)
 
 ## Week 2
 
@@ -76,10 +77,12 @@ Docker in depth
 
 Reference repositories:
 
-- https://github.com/red-panda-ci/ubuntu-dind
-- https://github.com/red-panda-ci/jenkins-dind
-- https://github.com/informaticaph/PXGO_00064_2014_PHA
-- https://hub.docker.com/_/docker
+- [Red Panda CI - Ubuntu DIND](<https://github.com/red-panda-ci/ubuntu-dind)
+- [Red Panda CI - Jenkins DIND](<https://github.com/red-panda-ci/jenkins-dind)
+- [Informática Parmadux - Odoo](https://github.com/informaticaph/PXGO_00064_2014_PHA)
+- [Docker in Docker](https://hub.docker.com/_/docker)
+- [Zalando IT - Zalenium](https://github.com/zalando/zalenium)
+- [Aerokube - Windows Images](https://github.com/aerokube/windows-images)
 
 ### Day 6
 
@@ -91,8 +94,8 @@ Demonstrate how we can use Docker to run a complete linux Desktop environment wi
 
 Reference repositories:
 
-- https://github.com/kairops/docker-ubuntu-xrdp-mate-custom
-- https://github.com/sergioortegagomez/docker-ubuntu-cucumber
+- Kairop's GitHub - [Docker Ubuntu INstant Gherkin](https://github.com/kairops/docker-ubuntu-xrdp-mate-custom/tree/master/duing)
+- Sergio Ortega Gomez's GitHub - [Docker Ubuntu 18.10 Mate Desktop](https://github.com/sergioortegagomez/docker-ubuntu-cucumber)
 
 ## Further reading
 
