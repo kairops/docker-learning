@@ -1,6 +1,6 @@
 #!groovy
 
-@Library('github.com/red-panda-ci/jenkins-pipeline-library@v2.7.0') _
+@Library('github.com/red-panda-ci/jenkins-pipeline-library@v3.1.5') _
 
 // Initialize global config
 cfg = jplConfig('docker-learning', 'doc', '', [slack: '#integrations', email:'redpandaci+docker-learning@gmail.com'])
@@ -10,9 +10,16 @@ pipeline {
 
     stages {
         stage ('Initialize') {
-            agent { label 'master' }
+            agent { label 'docker' }
             steps  {
                 jplStart(cfg)
+            }
+        }
+        stage ('Initialize') {
+            agent { label 'docker' }
+            when { branch 'release/new' }
+            steps  {
+                jplMakeRelease(cfg, true)
             }
         }
         stage ('Release confirm') {
@@ -22,7 +29,7 @@ pipeline {
             }
         }
         stage ('Release finish') {
-            agent { label 'master' }
+            agent { label 'docker' }
             when { expression { cfg.BRANCH_NAME.startsWith('release/v') || cfg.BRANCH_NAME.startsWith('hotfix/v') && cfg.promoteBuild.enabled } }
             steps {
                 jplCloseRelease(cfg)
