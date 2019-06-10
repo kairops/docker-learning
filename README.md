@@ -12,7 +12,7 @@ Learning docker
 
 Inception with docker basics
 
-- Container execution and [deatached execution](https://medium.freecodecamp.org/dockers-detached-mode-for-beginners-c53095193ee9)
+- Container execution and deatached execution
 - Pets vs Cattle
 - Docker Development Flow
 - Images
@@ -77,12 +77,12 @@ Docker in depth
 
 Reference repositories:
 
-- [Red Panda CI - Ubuntu DIND](<https://github.com/red-panda-ci/ubuntu-dind)
-- [Red Panda CI - Jenkins DIND](<https://github.com/red-panda-ci/jenkins-dind)
-- [Informática Parmadux - Odoo](https://github.com/informaticaph/PXGO_00064_2014_PHA)
-- [Docker in Docker](https://hub.docker.com/_/docker)
-- [Zalando IT - Zalenium](https://github.com/zalando/zalenium)
-- [Aerokube - Windows Images](https://github.com/aerokube/windows-images)
+- Red Panda CI's GitHub - [Ubuntu DIND](https://github.com/red-panda-ci/ubuntu-dind)
+- Red Panda CI's GitHub - [Jenkins DIND](https://github.com/red-panda-ci/jenkins-dind)
+- Informática Parmadux's GitHub - [Odoo](https://github.com/informaticaph/PXGO_00064_2014_PHA)
+- Docker - [Docker in Docker](https://hub.docker.com/_/docker)
+- Zalando IT's GitHub - [Zalenium](https://github.com/zalando/zalenium)
+- Aerokube's GitHub - [Windows Images](https://github.com/aerokube/windows-images)
 
 ### Day 6
 
