@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.3 (2019-06-11)
+
+### Update
+
+* Add jpetazzo blog entry info ([01f2491](https://github.com:kairops/docker-learning/commit/01f2491))
+
+### Build
+
+* Update Auto Release Log adding v0.3.3 info with JPL ([30eee4c](https://github.com:kairops/docker-learning/commit/30eee4c))
+
+### Docs
+
+* Generate v0.3.2 changelog with JPL ([49d01dc](https://github.com:kairops/docker-learning/commit/49d01dc))
+
 ## v0.3.2 (2019-06-10)
 
 ### Update
