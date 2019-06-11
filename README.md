@@ -77,6 +77,7 @@ Docker in depth
 
 Reference repositories:
 
+- Jerôme Petazzoni - [Using Docker in Docker](https://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/)
 - Red Panda CI's GitHub - [Ubuntu DIND](https://github.com/red-panda-ci/ubuntu-dind)
 - Red Panda CI's GitHub - [Jenkins DIND](https://github.com/red-panda-ci/jenkins-dind)
 - Informática Parmadux's GitHub - [Odoo](https://github.com/informaticaph/PXGO_00064_2014_PHA)
