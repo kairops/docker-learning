@@ -22,19 +22,6 @@ pipeline {
                 jplMakeRelease(cfg, true)
             }
         }
-        stage ('Release confirm') {
-            when { expression { cfg.BRANCH_NAME.startsWith('release/v') || cfg.BRANCH_NAME.startsWith('hotfix/v') } }
-            steps {
-                jplPromoteBuild(cfg)
-            }
-        }
-        stage ('Release finish') {
-            agent { label 'docker' }
-            when { expression { cfg.BRANCH_NAME.startsWith('release/v') || cfg.BRANCH_NAME.startsWith('hotfix/v') && cfg.promoteBuild.enabled } }
-            steps {
-                jplCloseRelease(cfg)
-            }
-        }
     }
 
     post {
@@ -48,7 +35,6 @@ pipeline {
         ansiColor('xterm')
         buildDiscarder(logRotator(artifactNumToKeepStr: '20',artifactDaysToKeepStr: '30'))
         disableConcurrentBuilds()
-        skipDefaultCheckout()
         timeout(time: 1, unit: 'DAYS')
     }
 }
