@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.3.5 (2019-07-03)
+
+### Update
+
+* Soft review of some reference links and concepts format ([4a40b74](https://github.com/kairops/docker-learning/commit/4a40b74))
+
+### Build
+
+* Update Auto Release Log adding v0.3.5 info with JPL ([e9bbf13](https://github.com/kairops/docker-learning/commit/e9bbf13))
+
+### Docs
+
+* Generate v0.3.4 changelog with JPL ([430b71f](https://github.com/kairops/docker-learning/commit/430b71f))
+
 ## v0.3.4 (2019-06-30)
 
 ### Build
