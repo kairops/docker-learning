@@ -15,6 +15,13 @@ pipeline {
                 jplStart(cfg)
             }
         }
+        stage ('Bash linter') {
+            steps {
+                script {
+                    sh "devcontrol run-bash-linter"
+                }
+            }
+        }
         stage ('Make release') {
             agent { label 'docker' }
             when { branch 'release/new' }
