@@ -1,5 +1,24 @@
 # Changelog
 
+## v0.4.0 (2019-09-05)
+
+### New
+
+* Add devcontrol install-stuff action ([b62c0dd](https://github.com/kairops/docker-learning/commit/b62c0dd))
+* Add devcontrol startup script ([f283060](https://github.com/kairops/docker-learning/commit/f283060))
+* Add devcontrol run-bash-linter action ([4cb2122](https://github.com/kairops/docker-learning/commit/4cb2122))
+
+### Build
+
+* Update Auto Release Log adding v0.4.0 info with JPL ([e0faafe](https://github.com/kairops/docker-learning/commit/e0faafe))
+* Use docker agent for all stages of the pipeline ([befda66](https://github.com/kairops/docker-learning/commit/befda66))
+* Add bash linter pipeline stage ([b98935f](https://github.com/kairops/docker-learning/commit/b98935f))
+
+### Docs
+
+* Add install stuff instructions to main readme file ([64065e5](https://github.com/kairops/docker-learning/commit/64065e5))
+* Generate v0.3.5 changelog with JPL ([819126a](https://github.com/kairops/docker-learning/commit/819126a))
+
 ## v0.3.5 (2019-07-03)
 
 ### Update
