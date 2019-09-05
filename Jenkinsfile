@@ -3,14 +3,13 @@
 @Library('github.com/red-panda-ci/jenkins-pipeline-library@v3.1.6') _
 
 // Initialize global config
-cfg = jplConfig('docker-learning', 'doc', '', [slack: '#integrations', email:'redpandaci+docker-learning@gmail.com'])
+cfg = jplConfig('docker-learning', 'doc', '', [email:'redpandaci+docker-learning@gmail.com'])
 
 pipeline {
-    agent none
+    agent { label 'docker' }
 
     stages {
         stage ('Initialize') {
-            agent { label 'docker' }
             steps  {
                 jplStart(cfg)
             }
@@ -23,7 +22,6 @@ pipeline {
             }
         }
         stage ('Make release') {
-            agent { label 'docker' }
             when { branch 'release/new' }
             steps  {
                 jplMakeRelease(cfg, true)
