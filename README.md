@@ -104,3 +104,15 @@ Reference repositories:
 ## Further reading
 
 - [General Concepts](https://github.com/kairops/general-concepts/blob/master/es/toc.md) about Software Development (Spanish)
+
+## Stuff Intallation
+
+You can download the whole docker images and clone the whole referenced repositories with a script within the project.
+
+Execute the command:
+
+```console
+devcontrol/actions/install-stuff.sh exec
+```
+
+...or use `devcontrol install-stuff` if you have [Devcontrol](https://github.com/teecke/devcontrol) installed on your system) and wait for the script to finish.
