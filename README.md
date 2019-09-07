@@ -13,8 +13,8 @@ Learning docker
 Inception with docker basics
 
 - Container execution and deatached execution
-- CMD and ENTRYPOINT differences
 - Docker Development Flow
+- CMD and ENTRYPOINT differences
 - Pets vs Cattle
 - Images
   - Layers
