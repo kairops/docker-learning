@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.5.0 (2019-09-07)
+
+### New
+
+* Add bdd session test and instructions ([7974e88](https://github.com/kairops/docker-learning/commit/7974e88))
+
+### Build
+
+* Update Auto Release Log adding v0.5.0 info with JPL ([3364b69](https://github.com/kairops/docker-learning/commit/3364b69))
+
+### Docs
+
+* Generate v0.4.1 changelog with JPL ([11b490e](https://github.com/kairops/docker-learning/commit/11b490e))
+
 ## v0.4.1 (2019-09-07)
 
 ### Update
