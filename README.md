@@ -116,3 +116,61 @@ devcontrol/actions/install-stuff.sh exec
 ```
 
 ...or use `devcontrol install-stuff` if you have [Devcontrol](https://github.com/teecke/devcontrol) installed on your system) and wait for the script to finish.
+
+## BDD examples
+
+Find in the `bdd-examples` directory of the repository some examples of BDD test created as part of the day 6 session.
+
+To execute the tests:
+
+1. Start a `duing` container with the repository shared as volume within it.
+
+```console
+docker run --name duing \
+           -p 3389:3389 \
+           --shm-size 1g \
+           -dit --restart unless-stopped \
+           -v $(pwd):/opt/docker-learning \
+           kairops/duing
+```
+
+2. Copy the `/opt/docker-learning/bdd-examples/test/` directory in `/opt/duingdemo/ci-scripts/test/`. This will add the examples to the `features` directory.
+
+```console
+$ docker exec -u ubuntu duing cp -rv /opt/docker-learning/bdd-examples/test/ /opt/duingdemo/ci-scripts/
+'/opt/docker-learning/bdd-examples/test/cucumber/features/step_definitions/bddfire_steps.rb' -> '/opt/duingdemo/ci-scripts/test/cucumber/features/step_definitions/bddfire_steps.rb'
+'/opt/docker-learning/bdd-examples/test/cucumber/features/github_search.feature' -> '/opt/duingdemo/ci-scripts/test/cucumber/features/github_search.feature'
+```
+
+3. Follow the instructions of the [Duing](https://github.com/kairops/docker-ubuntu-xrdp-mate-custom/tree/master/duing) project.
+
+Take care that github can't be tested with PhantomJS, so the `rake poltergeist` command will end with an error.
+
+```console
+ubuntu@7a0e1ec3060f:/opt/duingdemo/ci-scripts/test/cucumber$ rake poltergeist
+/usr/bin/ruby2.5 -S bundle exec cucumber features -p poltergeist --format pretty --profile html -t ~@api
+{"baseurl"=>"https://www.google.es", "take_screenshots"=>false, "screenshot_delay"=>1, "browser_width"=>1024}
+Using the poltergeist and html profiles...
+Feature: Google Search to explore BDDfire
+
+  Scenario: View home page                      # features/bddfire.feature:4
+    Given I am on "http://www.google.com?hl=en" # bddfire-3.0.2/lib/bddfire/web/web_steps.rb:2
+    When I fill in "q" with the text "bddfire"  # bddfire-3.0.2/lib/bddfire/web/web_steps.rb:6
+    Then I should see "Sign in"                 # bddfire-3.0.2/lib/bddfire/web/web_steps.rb:10
+
+Feature: Github search for a library
+
+  Scenario: Search library within github                # features/github_search.feature:3
+    Given I am on "https://www.github.com"              # bddfire-3.0.2/lib/bddfire/web/web_steps.rb:2
+      Request to 'https://www.github.com' failed to reach server, check DNS and/or server status (Capybara::Poltergeist::StatusFailError)
+      features/github_search.feature:4:in `Given I am on "https://www.github.com"'
+    When I fill in "Search GitHub" with the text "vavr" # bddfire-3.0.2/lib/bddfire/web/web_steps.rb:6
+    And I press intro key with my little finger         # features/step_definitions/bddfire_steps.rb:3
+
+Failing Scenarios:
+cucumber -p poltergeist -p html features/github_search.feature:3 # Scenario: Search library within github
+
+2 scenarios (1 failed, 1 passed)
+6 steps (1 failed, 2 skipped, 3 passed)
+0m1.410s
+```
