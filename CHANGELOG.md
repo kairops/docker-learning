@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.4.1 (2019-09-07)
+
+### Update
+
+* Change index of Day 1 ([3d89560](https://github.com/kairops/docker-learning/commit/3d89560))
+
+### Build
+
+* Update Auto Release Log adding v0.4.1 info with JPL ([83b1e4d](https://github.com/kairops/docker-learning/commit/83b1e4d))
+
+### Docs
+
+* Generate v0.4.0 changelog with JPL ([20da558](https://github.com/kairops/docker-learning/commit/20da558))
+
 ## v0.4.0 (2019-09-05)
 
 ### New
