@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.5.1 (2019-09-18)
+
+### Build
+
+* Update Auto Release Log adding v0.5.1 info with JPL ([fe06cd2](https://github.com/kairops/docker-learning/commit/fe06cd2))
+
+### Docs
+
+* Include dockerfile linter info reference ([357ba1a](https://github.com/kairops/docker-learning/commit/357ba1a))
+* Generate v0.5.0 changelog with JPL ([1bd9d88](https://github.com/kairops/docker-learning/commit/1bd9d88))
+
 ## v0.5.0 (2019-09-07)
 
 ### New
