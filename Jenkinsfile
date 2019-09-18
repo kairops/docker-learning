@@ -1,31 +1,30 @@
 #!groovy
 
-@Library('github.com/red-panda-ci/jenkins-pipeline-library@v2.6.2') _
+@Library('github.com/red-panda-ci/jenkins-pipeline-library@v3.1.6') _
 
 // Initialize global config
-cfg = jplConfig('docker-learning', 'doc', '', [slack: '#integrations', email:'redpandaci+docker-learning@gmail.com'])
+cfg = jplConfig('docker-learning', 'doc', '', [email:'redpandaci+docker-learning@gmail.com'])
 
 pipeline {
-    agent none
+    agent { label 'docker' }
 
     stages {
         stage ('Initialize') {
-            agent { label 'master' }
             steps  {
                 jplStart(cfg)
             }
         }
-        stage ('Release confirm') {
-            when { expression { cfg.BRANCH_NAME.startsWith('release/v') || cfg.BRANCH_NAME.startsWith('hotfix/v') } }
+        stage ('Bash linter') {
             steps {
-                jplPromoteBuild(cfg)
+                script {
+                    sh "devcontrol run-bash-linter"
+                }
             }
         }
-        stage ('Release finish') {
-            agent { label 'master' }
-            when { expression { cfg.BRANCH_NAME.startsWith('release/v') || cfg.BRANCH_NAME.startsWith('hotfix/v') && cfg.promoteBuild.enabled } }
-            steps {
-                jplCloseRelease(cfg)
+        stage ('Make release') {
+            when { branch 'release/new' }
+            steps  {
+                jplMakeRelease(cfg, true)
             }
         }
     }
@@ -41,7 +40,6 @@ pipeline {
         ansiColor('xterm')
         buildDiscarder(logRotator(artifactNumToKeepStr: '20',artifactDaysToKeepStr: '30'))
         disableConcurrentBuilds()
-        skipDefaultCheckout()
         timeout(time: 1, unit: 'DAYS')
     }
 }
