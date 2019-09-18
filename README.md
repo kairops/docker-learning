@@ -57,7 +57,7 @@ Reference repositories:
 
 External Links: 
 
-- Dokerfile validations - [From:latest](https://www.fromlatest.io/#/)
+- Dokerfile linter - [From:latest](https://www.fromlatest.io/#/)
 
 ## Week 2
 
