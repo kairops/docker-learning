@@ -28,10 +28,6 @@ Reference repositories:
 
 - Daniele Siddi's GitHub - [Curso de introducción a Docker](https://github.com/danielesiddi/docker-course)
 
-External Links: 
-
-- Dokerfile validations - [From:latest](https://www.fromlatest.io/#/)
-
 ### Day 2
 
 Docker Elements
@@ -58,6 +54,10 @@ Docker Compose
 Reference repositories:
 
 - Sergio Ortega Gome's GitHub - [Symfony 4 App Example](https://github.com/sergioortegagomez/red-panda-ci-symfony)
+
+External Links: 
+
+- Dokerfile validations - [From:latest](https://www.fromlatest.io/#/)
 
 ## Week 2
 
