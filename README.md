@@ -55,6 +55,10 @@ Reference repositories:
 
 - Sergio Ortega Gome's GitHub - [Symfony 4 App Example](https://github.com/sergioortegagomez/red-panda-ci-symfony)
 
+External resources:
+
+- Dockerfile linter resource - [FROM:latest](https://www.fromlatest.io)
+
 ## Week 2
 
 Using docker
