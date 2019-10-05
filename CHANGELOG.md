@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.6.0 (2019-10-05)
+
+### New
+
+* Add kairos round 2 tests ([8d738d8](https://github.com/kairops/docker-learning/commit/8d738d8))
+
+### Build
+
+* Update Auto Release Log adding v0.6.0 info with JPL ([856737d](https://github.com/kairops/docker-learning/commit/856737d))
+
+### Docs
+
+* Generate v0.5.1 changelog with JPL ([1f67beb](https://github.com/kairops/docker-learning/commit/1f67beb))
+
 ## v0.5.1 (2019-09-18)
 
 ### Build
