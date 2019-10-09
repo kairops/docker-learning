@@ -1,9 +1,9 @@
 #!groovy
 
-@Library('github.com/red-panda-ci/jenkins-pipeline-library@v3.1.6') _
+@Library('github.com/teecke/jenkins-pipeline-library@v3.4.1') _
 
 // Initialize global config
-cfg = jplConfig('docker-learning', 'doc', '', [email:'redpandaci+docker-learning@gmail.com'])
+cfg = jplConfig('docker-learning', 'doc', '', [email: env.CIKAIROS_NOTIFY_EMAIL_TARGETS])
 
 pipeline {
     agent { label 'docker' }
