@@ -1,5 +1,20 @@
 # Changelog
 
+## v0.7.0 (2019-10-09)
+
+### New
+
+* Add Spring Boot option for the day 5 session ([ae8670a](https://github.com/kairops/docker-learning/commit/ae8670a))
+
+### Build
+
+* Update Auto Release Log adding v0.7.0 info with JPL ([d04db3a](https://github.com/kairops/docker-learning/commit/d04db3a))
+* Use teecke jpl v3.4.1 ([d788aac](https://github.com/kairops/docker-learning/commit/d788aac))
+
+### Docs
+
+* Generate v0.6.0 changelog with JPL ([1738fec](https://github.com/kairops/docker-learning/commit/1738fec))
+
 ## v0.6.0 (2019-10-05)
 
 ### New
