@@ -71,7 +71,9 @@ Reference repositories: none that we can share :)
 
 ### Day 5
 
-Docker in depth
+Choose one of the following options
+
+#### Docker in depth
 
 - Docker in Docker
   - Ubuntu DIND
@@ -92,6 +94,26 @@ Reference repositories:
 - Zalando IT's GitHub - [Zalenium](https://github.com/zalando/zalenium)
 - Aerokube's GitHub - [Windows Images](https://github.com/aerokube/windows-images)
 
+#### Dockerize an application
+
+Put docker on the [Spring Boot Angular4 Heroes](https://github.com/gaoxinwen/spring-boot-angular4-heroes) sample application.
+
+Stages:
+
+1. Follow the instructions of the project and install on your workstation or laptop all the stuff to execute the application.
+2. Build a docker-compose platform in two services: database and application.
+3. Compare with the [Kairops Fork](https://github.com/kairops/spring-boot-angular4-heroes/tree/feature/dockernice) of the project and the solution proposed here. Don't cheat and look only when you are finished the sedond stage.
+
+Tips:
+
+- Use MySQL 5.x or MariaDB 5.x versions for the database service.
+- Use debian based image for the application service.
+- Add `--disable-host-check` and `--host 0.0.0.0` parameters for the `ng start` command.
+
+Top goal:
+
+- Try to split the application in two docker services: backend and frontend.
+
 ### Day 6
 
 BDD with Docker
@@ -108,6 +130,7 @@ Reference repositories:
 ## Further reading
 
 - [General Concepts](https://github.com/kairops/general-concepts/blob/master/es/toc.md) about Software Development (Spanish)
+- [Play with Docker](https://training.play-with-docker.com)
 
 ## Stuff Intallation
 
