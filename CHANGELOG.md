@@ -1,5 +1,19 @@
 # Changelog
 
+## v0.8.0 (2020-02-03)
+
+### New
+
+* Add ADD vs COPY info ([970450f](https://github.com/kairops/docker-learning/commit/970450f))
+
+### Build
+
+* Update Auto Release Log adding v0.8.0 info with JPL ([37d5a4a](https://github.com/kairops/docker-learning/commit/37d5a4a))
+
+### Docs
+
+* Generate v0.7.0 changelog with JPL ([ed3fa76](https://github.com/kairops/docker-learning/commit/ed3fa76))
+
 ## v0.7.0 (2019-10-09)
 
 ### New
