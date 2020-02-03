@@ -13,9 +13,6 @@ Learning docker
 Inception with docker basics
 
 - Container execution and deatached execution
-- Docker Development Flow
-- CMD and ENTRYPOINT differences
-- Pets vs Cattle
 - Images
   - Layers
   - tags
@@ -23,10 +20,14 @@ Inception with docker basics
 - Builds
   - Dockerfile
   - Build, commit, push
+- CMD and ENTRYPOINT differences
+- Pets vs Cattle
+- Docker Development Flow
 
 Reference repositories:
 
 - Daniele Siddi's GitHub - [Curso de introducción a Docker](https://github.com/danielesiddi/docker-course)
+- Brian DeHamer - Dockerfile [ADD vs COPY](https://www.ctl.io/developers/blog/post/dockerfile-add-vs-copy/)
 
 ### Day 2
 
