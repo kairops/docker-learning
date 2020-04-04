@@ -16,9 +16,7 @@ pipeline {
         }
         stage ('Bash linter') {
             steps {
-                script {
-                    sh "devcontrol run-bash-linter"
-                }
+                sh "devcontrol run-bash-linter"
             }
         }
         stage ('Make release') {
