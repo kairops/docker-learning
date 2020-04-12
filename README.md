@@ -1,3 +1,7 @@
+# DEPRECATED
+
+Please visit https://github.com/tpbtools/docker-learning
+
 # Docker Learning
 
 Docker Learning Course
